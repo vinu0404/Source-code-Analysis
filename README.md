@@ -1,2 +1,44 @@
-# Source-code-Analysis
-The project extracts all code from a given GitHub link, converts it into vector embeddings using OpenAI's embedding model, and stores them in ChromaDB. Users can then query the stored embeddings, and the system retrieves relevant code snippets and answers questions using an LLM with a retrieval-based approach.
+# End-to-end-Source-Code-Analysis-Generative-AI
+
+# How to run?
+### STEPS:
+```
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -n llmapp python=3.10 -y
+```
+
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+### Create a `.env` file in the root directory and add your OPENAI_API_KEY credentials as follows:
+
+```ini
+OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up localhost:
+```
+
+
+### Techstack Used:
+
+- Python
+- LangChain
+- Flask
+- OpenAI
+- GPT 3
+- ChoromaDB
+
